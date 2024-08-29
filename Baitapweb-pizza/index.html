@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Goose Bistro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Your Information</h2>
+            <form id="pizza-order-form">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </li>
+                    <li>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </li>
+                    <li>
+                        <label for="telephone">Telephone number:</label>
+                        <input type="text" id="telephone" name="telephone" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="instructions">Delivery Instructions:</label>
+                        <textarea id="instructions" name="instructions" maxlength="400" cols="60" rows="4" placeholder="No more than 400 characters long"></textarea>
+                    </li>
+                </ul>
+
+                <h2>Design Your Dream Pizza</h2>
+                <p>Pizza specs</p>
+                <p>Crust <em>(Choose one)</em>:</p>
+                <ul>
+                    <li><label><input type="radio" name="crust" value="white">Classic white</label></li>
+                    <li><label><input type="radio" name="crust" value="multigrain">Multigrain</label></li>
+                    <li><label><input type="radio" name="crust" value="cheese-stuffed">Cheese-stuffed crust</label></li>
+                    <li><label><input type="radio" name="crust" value="gluten-free">Gluten-free</label></li>
+                </ul>
+
+                <p>Toppings <em>(Choose as many as you want)</em>:</p>
+                <ul>
+                    <li><label><input type="checkbox" name="toppings" value="red-sauce">Red sauce</label></li>
+                    <li><label><input type="checkbox" name="toppings" value="white-sauce">White sauce</label></li>
+                    <li><label><input type="checkbox" name="toppings" value="mozzarella">Mozzarella Cheese</label></li>
+                    <li><label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label></li>
+                    <li><label><input type="checkbox" name="toppings" value="mushrooms">Mushrooms</label></li>
+                    <li><label><input type="checkbox" name="toppings" value="peppers">Peppers</label></li>
+                    <li><label><input type="checkbox" name="toppings" value="anchovies">Anchovies</label></li>
+                </ul>
+
+                <p>How many pizzas:</p>
+                <select name="pizzas" size="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+
+                <div class="form-buttons">
+                    <input type="submit" value="Bring me a pizza">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
