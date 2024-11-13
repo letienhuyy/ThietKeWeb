@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    
+
+    
+  
+</head>
+<body>
+ 
+ <div class="main">
+  <img class="logo-home" src="./images/logo-inverted.svg" alt="">
+  <div class="menu__hotel"id="menu__hotel">
+
+    <ul class="menu-list">
+      <li><a href="#">List your property</a></li>
+      <li><a href="#">Trips</a></li>
+      <li><a href="#">Messages</a></li>
+      <hr>
+    </ul>
+    
+    
+    <div class="menu-footer">
+
+      
+      <h2>Jane Doe</h2><img src="images/photo-1487412720507-e7ab37603c6f.avif" alt="Profile" class="profile-pic">
+     
+
+      <ul class="footer-list">
+        <li><a href="#">Account settings</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+  
+    
+    
+
+         
+  <div class="hero">
+    
+    <nav>
+      
+     
+      <img class="logo-home" src="./images/logo-inverted.svg" alt="">
+      
+
+        <ul>
+          <li><a href="# ">List your property</a></li>
+          <li><a href="#">Trips</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+        
+        <!-- Vùng avatar -->
+        <img src="images/photo-1487412720507-e7ab37603c6f.avif" alt="" class="user-pic" onclick="toggleMenu()">
+      
+     
+      
+      <!-- Overlay nền -->
+      <div class="nav__overlayyy" onclick="toggleMenu()"></div>
+      
+      <!-- Menu con -->
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info"></div>
+          
+          <a href="#" class="sub-menu-link"><p>Account settings</p></a>
+          <a href="#" class="sub-menu-link"><p>Support</p></a>
+          <a href="#" class="sub-menu-link"><p>Sign out</p></a>
+        </div>
+      </div>
+      <div class="search-btn" id="search-btn">
+        <i class="search-icon ti-menu"></i>
+        <i class="search-icon1 ti-close"></i>
+      </div>
+      
+      
+      
+      
+      
+      
+    </nav>
+    
+
+
+
+
+    
+    
+      
+  </div>
+  <script>
+    /*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+  const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
+
+  toggle.addEventListener('click', () =>{
+      // Add show-menu class to nav menu
+      nav.classList.toggle('show-menu')
+      // Add show-icon to show and hide menu icon
+      toggle.classList.toggle('show-icon')
+  })
+}
+
+showMenu('search-btn','menu__hotel')
+  </script>
+
+ 
+
+
+
+  
+  
+  
+  
+  
+  <script>
+    // Lấy các phần tử
+    let subMenu = document.getElementById("subMenu");
+    let overlay = document.querySelector(".nav__overlayyy");
+  
+    function toggleMenu() {
+      // Bật/tắt overlay và menu
+      subMenu.classList.toggle("open-menu");
+      overlay.classList.toggle("open-overlay");
+    }
+  </script>
+  
+        
+
+    <div class="sider">
+        <div class="text-content">
+         <h2 class="text-hading">You can work from anywhere.</h2>
+          <h2 class="text-hading2">Take advantage of it.</h2>
+          <p class="text-description">Workcation helps you find work-friendly rentals in beautiful locations so you can enjoy some nice weather even when you're not on vacation.</p>
+         <a href="#"class="btn">BOOK YOUR ESCAPE</a>
+       
+        
+         </div>
+         
+         <div class="image-container">
+            <img src="./images/beach-work.jpg" alt="biển" class="place-img">
+          
+            </div>
+            
+            
+        
+        </div>
+         <div class="tour-section">
+          <div class="content">
+              <h2 class="section-heading">Popular destinations</h2>
+              <p class="section-sub-heading">A selection of great work-friendly cities with lots to see and explore.</p>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="./images/toronto.jpg" alt="Toronto"class="item-img">
+              <div class="card-content">
+                <h2>Toronto</h2>
+                <p>$120/night average</p>
+                <a href="#" class="btn-button">Explore 76 properties </a>
+               
+              </div>
+
+            </div>
+            <div class="grid-item">
+              <img src="./images/malibu.jpg" alt="Toronto"class="item-img">
+              <div class="card-content">
+                <h2>Malibu</h2>
+                <p>$215 / night average</p>
+                <a href="#" class="btn-button">Explore 43 properties </a>
+                
+              </div>
+            
+          </div>
+          <div class="grid-item">
+            <img src="./images/chicago.jpg" alt="Toronto"class="item-img">
+            <div class="card-content">
+              <h2>Chicago</h2>
+              <p>$130 / night average</p>
+              <a href="#" class="btn-button">Explore 115 properties</a>
+             
+            </div>
+          
+        </div>
+        <div class="grid-item">
+          <img src="./images/seattle.jpg" alt="Toronto"class="item-img">
+              <div class="card-content">
+                <h2>Seattle</h2>
+                <p>$135 / night average</p>
+                <a href="#" class="btn-button">Explore 63 properties </a>
+               
+              </div>
+            
+          </div>
+          <div class="grid-item">
+            <img src="./images/colorado.jpg" alt="Toronto"class="item-img">
+            <div class="card-content">
+              <h2>Colorado</h2>
+              <p>$85 / night average</p>
+              <a href="#" class="btn-button">Explore 47 properties </a>
+          
+            </div>
+          
+        </div>
+        <div class="grid-item">
+          <img src="./images/miami.jpg" alt="Toronto"class="item-img">
+          <div class="card-content">
+            <h2>Miami</h2>
+            <p>$115 / night average</p>
+            <a href="#" class="btn-button">Explore 86 properties </a>
+            
+          </div>
+        
+      </div>
+          
+          
+        </div>
+       
+       
+          
+
+        
+    </div>
+     
+
+</body>
+</html>
