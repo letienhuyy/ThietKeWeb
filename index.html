@@ -1,234 +1,237 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
-    
-
-    
-  
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="la.jpg">
 </head>
 <body>
- 
- <div class="main">
-  <img class="logo-home" src="./images/logo-inverted.svg" alt="">
-  <div class="menu__hotel"id="menu__hotel">
-
-    <ul class="menu-list">
-      <li><a href="#">List your property</a></li>
-      <li><a href="#">Trips</a></li>
-      <li><a href="#">Messages</a></li>
-      <hr>
-    </ul>
-    
-    
-    <div class="menu-footer">
-
-      
-      <h2>Jane Doe</h2><img src="images/photo-1487412720507-e7ab37603c6f.avif" alt="Profile" class="profile-pic">
-     
-
-      <ul class="footer-list">
-        <li><a href="#">Account settings</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Sign out</a></li>
-      </ul>
-    </div>
-  </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css ">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+</head>
+<body>
   
     
-    
-
-         
-  <div class="hero">
-    
-    <nav>
-      
-     
-      <img class="logo-home" src="./images/logo-inverted.svg" alt="">
-      
-
-        <ul>
-          <li><a href="# ">List your property</a></li>
-          <li><a href="#">Trips</a></li>
-          <li><a href="#">Messages</a></li>
-        </ul>
-        
-        <!-- Vùng avatar -->
-        <img src="images/photo-1487412720507-e7ab37603c6f.avif" alt="" class="user-pic" onclick="toggleMenu()">
-      
-     
-      
-      <!-- Overlay nền -->
-      <div class="nav__overlayyy" onclick="toggleMenu()"></div>
-      
-      <!-- Menu con -->
-      <div class="sub-menu-wrap" id="subMenu">
-        <div class="sub-menu">
-          <div class="user-info"></div>
-          
-          <a href="#" class="sub-menu-link"><p>Account settings</p></a>
-          <a href="#" class="sub-menu-link"><p>Support</p></a>
-          <a href="#" class="sub-menu-link"><p>Sign out</p></a>
-        </div>
-      </div>
-      <div class="search-btn" id="search-btn">
-        <i class="search-icon ti-menu"></i>
-        <i class="search-icon1 ti-close"></i>
-      </div>
-      
-      
-      
-      
-      
-      
-    </nav>
-    
-
-
-
-
-    
-    
-      
-  </div>
-  <script>
-    /*=============== SHOW MENU ===============*/
-const showMenu = (toggleId, navId) =>{
-  const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
-
-  toggle.addEventListener('click', () =>{
-      // Add show-menu class to nav menu
-      nav.classList.toggle('show-menu')
-      // Add show-icon to show and hide menu icon
-      toggle.classList.toggle('show-icon')
-  })
-}
-
-showMenu('search-btn','menu__hotel')
-  </script>
-
- 
-
-
-
-  
-  
-  
-  
-  
-  <script>
-    // Lấy các phần tử
-    let subMenu = document.getElementById("subMenu");
-    let overlay = document.querySelector(".nav__overlayyy");
-  
-    function toggleMenu() {
-      // Bật/tắt overlay và menu
-      subMenu.classList.toggle("open-menu");
-      overlay.classList.toggle("open-overlay");
-    }
-  </script>
-  
-        
-
-    <div class="sider">
-        <div class="text-content">
-         <h2 class="text-hading">You can work from anywhere.</h2>
-          <h2 class="text-hading2">Take advantage of it.</h2>
-          <p class="text-description">Workcation helps you find work-friendly rentals in beautiful locations so you can enjoy some nice weather even when you're not on vacation.</p>
-         <a href="#"class="btn">BOOK YOUR ESCAPE</a>
-       
-        
-         </div>
-         
-         <div class="image-container">
-            <img src="./images/beach-work.jpg" alt="biển" class="place-img">
-          
-            </div>
-            
-            
-        
-        </div>
-         <div class="tour-section">
-          <div class="content">
-              <h2 class="section-heading">Popular destinations</h2>
-              <p class="section-sub-heading">A selection of great work-friendly cities with lots to see and explore.</p>
-          </div>
-          <div class="grid-container">
-            <div class="grid-item">
-              <img src="./images/toronto.jpg" alt="Toronto"class="item-img">
-              <div class="card-content">
-                <h2>Toronto</h2>
-                <p>$120/night average</p>
-                <a href="#" class="btn-button">Explore 76 properties </a>
-               
-              </div>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">HOme</a></li>
+                <li><a href="#band">BAND</a></li>
+                <li><a href="#tour">TOUR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li>
+                      
+                    <a href="">MORE
+                        <i class="nav-arroun- down ti-angle-down"></i> 
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                    <li>
+            </ul>
+           
+             <div class="search-btn">
+                <i class="serach-icon ti-search"></i> 
 
             </div>
-            <div class="grid-item">
-              <img src="./images/malibu.jpg" alt="Toronto"class="item-img">
-              <div class="card-content">
-                <h2>Malibu</h2>
-                <p>$215 / night average</p>
-                <a href="#" class="btn-button">Explore 43 properties </a>
-                
+        </div>
+        <div id="sider">
+             <div class="text-content">
+                <h2 class="text-hading">Los Angeles</h2>
+                <div class="text-description">We had the best time playing at Venice Beach!</div>
+
+             </div>
+
+
+
+        </div>
+        <div id="content">
+            <!-- About-section -->
+            <div id="band"class="content-section">
+                <h2 class="section-heading">THE BAND</h2>
+             <p class="section-sub-heading">We love music</p>
+             <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             <div class="members-list">
+
+                <div class="member-item">
+
+                    <p class="member-name">Name</p>
+                    <img src="bandmember.jpg" alt="Name" class="member-img">
+
+
+                </div>
+
+                <div class="member-item">
+
+                    <p class="member-name">Name</p>
+                    <img src="bandmember.jpg" alt="Name" class="member-img">
+
+
+                </div>
+
+                <div class="member-item">
+
+                    <p class="member-name">Name</p>
+                    <img src="bandmember.jpg" alt="Name" class="member-img">
+
+
+                </div>
+                <div class="clear"></div>
+
+
+            </div>
+
+
+
+
+            </div>
+             <!-- Tour-section -->
+              <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="text-while section-heading">TOUR DATES</h2>
+                 <p class="text-while section-sub-heading">Remember to book your tickets!</p>
+
+
+                       <!-- Tickets  -->
+                 <ul class="tickets-list">
+                    <li>September <Span class="Sold-out"> Sold out</Span></li>
+                    <li>October <Span class="Sold-out"> Sold out</Span></li>
+                    <li>November <span class="quantity">3</span></li>
+                 </ul>
+
+                 <!-- Place -->
+                  <div class="row place-list">
+                    <div class="col col-third">
+                        <img src="newyork.jpg" alt="New York" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">New York</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-dess">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="col col-third">
+                        <img src="paris.jpg" alt="Paris" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Paris</h3>
+                            <p class="place-time">Sat 28 Nov 2016</p>
+                            <p class="place-dess">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class= "btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="col col-third">
+                        <img src="sanfran.jpg" alt="San Francisco" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">San Francisco</h3>
+                            <p class="place-time">Sun 29 Nov 2016</p>
+                            <p class="place-dess">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#" class="btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+
+
+              
+                 
+                </div>
+
               </div>
             
-          </div>
-          <div class="grid-item">
-            <img src="./images/chicago.jpg" alt="Toronto"class="item-img">
-            <div class="card-content">
-              <h2>Chicago</h2>
-              <p>$130 / night average</p>
-              <a href="#" class="btn-button">Explore 115 properties</a>
+
+
+              <!-- CONTACT-section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+             <p class="section-sub-heading">Fan? Drop a note!</p>
+
+              <div class="row contact-content">
+                <div class="col col-half contact-info">
+                    <p><i class="ti-location-pin"></i>Chicago, US</p>
+                    <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                    <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                </div>
+                <div class="col col-half contact-form ">
+                    <form action="">
+                        
+                        <div class="row">
+                            <div class="col col-half">
+                                <input type="text" name=""placeholder="Name" required id="" class="form-control">
+                            </div>
+                            <div class="col col-half"></div>
+                                <input type="email" name=""placeholder="Email" required="" class="form-control">
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name=""placeholder="Massage" required id="" class="form-control">
+                                </div>
+                             
+
+                        </div>
+                        
+                        <input class="pull-right btn mt-16" type="submit" value="SEND">
+                        </div>
+
+                        
+                     
+                    </form>
+                    
+                    
+                </div>
+
+              </div>
+              <!--  End CONTACT-section --> 
+                <div class="map-section">
+                    <img src="map.jpg" alt="Map">
+                </div>
+
+
              
             </div>
           
-        </div>
-        <div class="grid-item">
-          <img src="./images/seattle.jpg" alt="Toronto"class="item-img">
-              <div class="card-content">
-                <h2>Seattle</h2>
-                <p>$135 / night average</p>
-                <a href="#" class="btn-button">Explore 63 properties </a>
-               
-              </div>
-            
-          </div>
-          <div class="grid-item">
-            <img src="./images/colorado.jpg" alt="Toronto"class="item-img">
-            <div class="card-content">
-              <h2>Colorado</h2>
-              <p>$85 / night average</p>
-              <a href="#" class="btn-button">Explore 47 properties </a>
-          
-            </div>
-          
-        </div>
-        <div class="grid-item">
-          <img src="./images/miami.jpg" alt="Toronto"class="item-img">
-          <div class="card-content">
-            <h2>Miami</h2>
-            <p>$115 / night average</p>
-            <a href="#" class="btn-button">Explore 86 properties </a>
-            
-          </div>
-        
-      </div>
-          
-          
-        </div>
-       
-       
-          
 
-        
-    </div>
-     
+                
+
+           
+
+
+
+
+             
+
+                 
+                    
+
+        </div>
+       
+           
+                
+
+
+        <div id="footer">
+            <div class="socoal-list">
+                <a href=""><i class ="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-printer"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="coppy-right">Powered by <a href="">w3.css</a></p>
+
+        </div>
 
 </body>
 </html>
